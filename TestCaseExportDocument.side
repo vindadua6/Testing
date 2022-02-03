@@ -1,0 +1,137 @@
+{
+  "id": "ea433e9f-aa4c-4e40-b4f7-d6ac2511efea",
+  "version": "2.0",
+  "name": "TestATS",
+  "url": "https://inpromise.pnep.co.id/ats/MTc5",
+  "tests": [{
+    "id": "371d2a55-ac4f-437b-ae18-965562640a93",
+    "name": "ats1",
+    "commands": [{
+      "id": "f8689a34-c54d-456e-b12d-da1c27d3f91e",
+      "comment": "",
+      "command": "open",
+      "target": "https://inpromise.pnep.co.id/ats/MTc5",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c33a1a52-0649-4b31-9043-268fd5fa2621",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1352x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2c833fa9-dcb0-4574-bfc7-c666b6f068fd",
+      "comment": "",
+      "command": "click",
+      "target": "css=#sidebar_menu > li:nth-child(2) span",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b1703ded-d0a6-4419-96c6-bfd05b100b55",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-modal-excel",
+      "targets": [
+        ["css=.btn-modal-excel", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//div[@id='list-atr']/div/div/div[2]/div/button[5]", "xpath:idRelative"],
+        ["xpath=//button[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d7efb12f-e580-4cac-b4dd-e56fe2b976dc",
+      "comment": "",
+      "command": "click",
+      "target": "id=start_date",
+      "targets": [
+        ["id=start_date", "id"],
+        ["name=start_date", "name"],
+        ["css=#start_date", "css:finder"],
+        ["xpath=//input[@id='start_date']", "xpath:attributes"],
+        ["xpath=//div[@id='ExcelModal']/div/div/div[2]/div/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "19273107-9451-426f-8601-0d993d21b5c9",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) > .day:nth-child(2)",
+      "targets": [
+        ["css=tr:nth-child(2) > .day:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='ExcelModal']/div/div/div[2]/div/div/div[2]/div/div/div/ul/li/div/div/table/tbody/tr[2]/td[2]", "xpath:idRelative"],
+        ["xpath=//li/div/div/table/tbody/tr[2]/td[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0761373c-3bbd-4ec2-96a0-6e43a97ca783",
+      "comment": "",
+      "command": "click",
+      "target": "id=end_date",
+      "targets": [
+        ["id=end_date", "id"],
+        ["name=end_date", "name"],
+        ["css=#end_date", "css:finder"],
+        ["xpath=//input[@id='end_date']", "xpath:attributes"],
+        ["xpath=//div[@id='ExcelModal']/div/div/div[2]/div/div[2]/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f41f4d5e-0cbf-4824-89f9-98404e1fac78",
+      "comment": "",
+      "command": "click",
+      "target": "css=.datepicker-days .prev > .fa",
+      "targets": [
+        ["css=.datepicker-days .prev > .fa", "css:finder"],
+        ["xpath=//div[@id='ExcelModal']/div/div/div[2]/div/div[2]/div[2]/div/div/div/ul/li/div/div/table/thead/tr/th/i", "xpath:idRelative"],
+        ["xpath=//th/i", "xpath:position"]
+      ],
+      "value": "10000"
+    }, {
+      "id": "60795151-88af-4e7d-8cd5-402d41712d51",
+      "comment": "",
+      "command": "click",
+      "target": "css=.today",
+      "targets": [
+        ["css=.today", "css:finder"],
+        ["xpath=//div[@id='ExcelModal']/div/div/div[2]/div/div[2]/div[2]/div/div/div/ul/li/div/div/table/tbody/tr[3]/td[2]", "xpath:idRelative"],
+        ["xpath=//li/div/div/table/tbody/tr[3]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'10')]", "xpath:innerText"]
+      ],
+      "value": "10000"
+    }, {
+      "id": "0e8c062a-002c-4fc0-8131-00c53a46abb0",
+      "comment": "",
+      "command": "click",
+      "target": "id=saveBtn",
+      "targets": [
+        ["id=saveBtn", "id"],
+        ["css=#saveBtn", "css:finder"],
+        ["xpath=//button[@id='saveBtn']", "xpath:attributes"],
+        ["xpath=//div[@id='ExcelModal']/div/div/div[2]/div[2]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div[2]/div[2]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,' Download')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce505426-4354-4d3d-a4d0-e5190aced3d7",
+      "comment": "",
+      "command": "echo",
+      "target": "",
+      "targets": [],
+      "value": "Success Export"
+    }]
+  }],
+  "suites": [{
+    "id": "634b32cc-d8d9-4f19-bb29-4630a8229780",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["371d2a55-ac4f-437b-ae18-965562640a93"]
+  }],
+  "urls": ["https://inpromise.pnep.co.id/ats/MTc5"],
+  "plugins": []
+}
